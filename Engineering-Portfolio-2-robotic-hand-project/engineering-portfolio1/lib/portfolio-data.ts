@@ -16,7 +16,7 @@ export type Project = {
   title: string
   category: string
   image: string
-  images?: { src: string; alt: string; caption: string }[]
+  images?: { src: string; alt: string; caption: string; aspect?: string }[]
   problem: string
   analysis: { label: string; value: string }[]
   prototype: string
@@ -69,6 +69,7 @@ export const projects: Project[] = [
         src: '/projects/robotic-hand-photo.jpg',
         alt: '3D-printed tendon-driven robotic hand with articulated fingers',
         caption: 'InMoov-style 3D-printed hand with servo-driven tendons',
+        aspect: 'aspect-[3/4]',
       },
       {
         src: '/projects/emg-rps-game.jpg',

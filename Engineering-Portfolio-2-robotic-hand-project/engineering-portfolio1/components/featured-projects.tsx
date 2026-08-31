@@ -28,7 +28,7 @@ export function FeaturedProjects() {
                           alt={img.alt}
                           width={800}
                           height={640}
-                          className="aspect-[5/4] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          className={`${img.aspect ?? 'aspect-[5/4]'} w-full bg-card object-contain transition-transform duration-500 group-hover:scale-105`}
                         />
                         <figcaption className="border-t border-border px-4 py-2.5 font-mono text-[11px] uppercase tracking-wide text-muted-foreground">
                           {img.caption}
