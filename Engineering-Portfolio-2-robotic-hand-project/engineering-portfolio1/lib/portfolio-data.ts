@@ -45,7 +45,7 @@ export const projects: Project[] = [
     index: '02',
     title: 'Functional Go-Kart Design & Build',
     category: 'Fabrication · UCLA Summer Program',
-    image: '/projects/cad-go-kart.png',
+    image: '/go-kart website photo.JPG',
     problem:
       'An intensive hands-on mechanical engineering course tasked a small team with designing, building, and testing a functional go-kart under a tight timeline.',
     analysis: [
