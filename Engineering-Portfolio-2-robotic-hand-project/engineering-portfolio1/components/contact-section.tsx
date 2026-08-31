@@ -23,7 +23,7 @@ export function ContactSection() {
         <SectionHeading
           index="/ 04"
           title="Get In Touch"
-          subtitle="Open to internship and full-time mechanical engineering roles. Let's build something."
+          subtitle="Open to internship/part-time mechanical engineering roles. Let's build something."
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-2">
@@ -56,10 +56,10 @@ export function ContactSection() {
             <div className="flex items-center justify-between border-b border-border px-4 py-3">
               <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-muted-foreground">
                 <FileText className="size-4 text-primary" />
-                resume.pdf
+                Ethan Tizabgar Resume - Google Docs.pdf
               </div>
               <a
-                href="/resume.pdf"
+                href="/Ethan Tizabgar Resume - Google Docs.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-8 items-center gap-2 rounded-sm bg-primary px-3 font-mono text-xs uppercase tracking-widest text-primary-foreground transition-transform hover:-translate-y-0.5"
@@ -69,7 +69,7 @@ export function ContactSection() {
               </a>
             </div>
             <object
-              data="/resume.pdf#toolbar=0&view=FitH"
+              data="/Ethan Tizabgar Resume - Google Docs.pdf#toolbar=0&view=FitH"
               type="application/pdf"
               className="h-[440px] w-full bg-muted"
               aria-label="Resume preview"
@@ -80,7 +80,7 @@ export function ContactSection() {
                   Your browser can&apos;t display the embedded PDF.
                 </p>
                 <a
-                  href="/resume.pdf"
+                  href="Ethan Tizabgar Resume - Google Docs.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex h-9 items-center gap-2 rounded-sm bg-primary px-4 text-sm font-semibold text-primary-foreground"
