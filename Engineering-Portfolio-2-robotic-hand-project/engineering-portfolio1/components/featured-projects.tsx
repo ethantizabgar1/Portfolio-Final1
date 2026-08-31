@@ -14,17 +14,39 @@ export function FeaturedProjects() {
               key={p.id}
               className="grid items-center gap-8 md:grid-cols-2 md:gap-12"
             >
-              {/* CAD render */}
+              {/* Project imagery */}
               <div className={i % 2 === 1 ? 'md:order-2' : ''}>
-                <div className="group relative overflow-hidden rounded-md border border-border bg-card">
-                  <Image
-                    src={p.image || '/placeholder.svg'}
-                    alt={`CAD render of ${p.title}`}
-                    width={800}
-                    height={640}
-                    className="aspect-[5/4] w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
+                {p.images ? (
+                  <div className="flex flex-col gap-4">
+                    {p.images.map((img) => (
+                      <figure
+                        key={img.src}
+                        className="group relative overflow-hidden rounded-md border border-border bg-card"
+                      >
+                        <Image
+                          src={img.src || '/placeholder.svg'}
+                          alt={img.alt}
+                          width={800}
+                          height={640}
+                          className={`${img.aspect ?? 'aspect-[5/4]'} w-full bg-card object-contain transition-transform duration-500 group-hover:scale-105`}
+                        />
+                        <figcaption className="border-t border-border px-4 py-2.5 font-mono text-[11px] uppercase tracking-wide text-muted-foreground">
+                          {img.caption}
+                        </figcaption>
+                      </figure>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="group relative overflow-hidden rounded-md border border-border bg-card">
+                    <Image
+                      src={p.image || '/placeholder.svg'}
+                      alt={`CAD render of ${p.title}`}
+                      width={800}
+                      height={640}
+                      className="aspect-[5/4] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                )}
               </div>
 
               {/* Case study */}
