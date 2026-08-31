@@ -16,6 +16,7 @@ export type Project = {
   title: string
   category: string
   image: string
+  images?: { src: string; alt: string; caption: string }[]
   problem: string
   analysis: { label: string; value: string }[]
   prototype: string
@@ -62,7 +63,19 @@ export const projects: Project[] = [
     index: '03',
     title: 'Robotic Hand & EMG Gesture Control',
     category: 'Robotics · Santa Monica College Team Project',
-    image: '/projects/robotic-hand-cad.png',
+    image: '/projects/robotic-hand-photo.jpg',
+    images: [
+      {
+        src: '/projects/robotic-hand-photo.jpg',
+        alt: '3D-printed tendon-driven robotic hand with articulated fingers',
+        caption: 'InMoov-style 3D-printed hand with servo-driven tendons',
+      },
+      {
+        src: '/projects/emg-rps-game.jpg',
+        alt: 'EMG muscle sensor on forearm driving a Rock-Paper-Scissors demo on a laptop via Arduino',
+        caption: 'MyoWare 2.0 EMG + Arduino running the Rock-Paper-Scissors demo',
+      },
+    ],
     problem:
       'A team project to build a tendon-driven robotic hand capable of reproducing human gestures, then drive it with real-time muscle-signal input.',
     analysis: [
@@ -71,7 +84,7 @@ export const projects: Project[] = [
       { label: 'Build', value: 'Servo + Arduino' },
     ],
     prototype:
-      'Designed and assembled an InMoov-style 3D-printed hand with servo-driven tendons, then pivoted to the control system — using a MyoWare 2.0 muscle sensor and Arduino Uno R4 WiFi to calibrate and classify gestures for a working Rock-Paper-Scissors demo.',
+      'Assembled an InMoov-style 3D-printed hand with servo-driven tendons, using a MyoWare 2.0 muscle sensor and Arduino Uno R4 WiFi to calibrate and classify gestures for a working Rock-Paper-Scissors demo.',
     tools: ['Arduino', 'MyoWare 2.0 EMG', '3D Printing', 'Embedded Systems'],
   },
 ]
