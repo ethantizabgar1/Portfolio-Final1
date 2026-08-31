@@ -7,7 +7,7 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/ethan-tizabgar-8a8bb1337',
   bio: 'Mechanical Engineering student at UC Irvine who designs, models, and builds mechanical systems — from first sketch to working prototype. SolidWorks-certified (CSWA) with hands-on experience in structural design, iterative prototyping, and teaching engineering fundamentals.',
   focus: ['CAD Design', 'Prototyping', 'FEA Analysis'],
-  photo: '/profile.png',
+  photo: '/profilephoto.jpg',
 }
 
 export type Project = {
