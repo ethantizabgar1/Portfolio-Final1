@@ -176,7 +176,7 @@ export const timeline: TimelineItem[] = [
     org: 'Santa Monica College',
     period: 'Completed',
     points: [
-      'Cumulative GPA 3.855 / 4.00.',
+      'Cumulative GPA 3.86 / 4.00.',
       'Coursework: Engineering Graphics and Design, Statics · SolidWorks (Passed CSWA) · C++.',
     ],
   },
