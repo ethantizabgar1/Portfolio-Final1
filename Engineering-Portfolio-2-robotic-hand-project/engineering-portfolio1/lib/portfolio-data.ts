@@ -122,7 +122,7 @@ export const timeline: TimelineItem[] = [
     type: 'work',
     title: 'Supplemental Instructor — Statics & Engineering Design',
     org: 'Santa Monica College',
-    period: 'Sep 2025 ��� Present',
+    period: 'Sep 2025 — June 2026',
     points: [
       'Provide academic support for a statics and engineering design course, with emphasis on SolidWorks modeling and technical drafting.',
       'Guide students through free-body diagrams, equilibrium analysis, part modeling, assemblies, and engineering drawings.',
