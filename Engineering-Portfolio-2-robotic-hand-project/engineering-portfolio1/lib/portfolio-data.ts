@@ -6,7 +6,6 @@ export const profile = {
   phone: '(310) 309-7922',
   linkedin: 'https://www.linkedin.com/in/ethan-tizabgar-8a8bb1337',
   bio: 'Mechanical Engineering student at UC Irvine who designs, models, and builds mechanical systems — from first sketch to working prototype. SolidWorks-certified (CSWA) with hands-on experience in structural design, iterative prototyping, and teaching engineering fundamentals.',
-  focus: ['CAD Design', 'Prototyping', 'FEA Analysis'],
   photo: '/profilephoto.jpg',
 }
 
@@ -52,10 +51,10 @@ export const projects: Project[] = [
     analysis: [
       { label: 'Role', value: 'Team Lead' },
       { label: 'Phases', value: 'Concept → Test' },
-      { label: 'Focus', value: 'Drivetrain / Frame' },
+      { label: 'Focus', value: 'Steering / Frame' },
     ],
     prototype:
-      'Led concept development, SolidWorks modeling, material selection, and assembly — then troubleshot mechanical failures under pressure to optimize drivetrain and frame components and improve overall vehicle performance.',
+      'Led concept development, SolidWorks modeling, material selection, and assembly — then troubleshot mechanical failures under pressure to optimize steering and frame components and improve overall vehicle performance.',
     tools: ['SolidWorks', 'Fabrication', 'Load Analysis'],
   },
   {
@@ -148,7 +147,6 @@ export const timeline: TimelineItem[] = [
     points: [
       'Designed, built, and tested functional go-karts in a hands-on mechanical engineering course.',
       'Led a small team through concept development, SolidWorks modeling, material selection, and assembly.',
-      'Troubleshot mechanical failures to optimize drivetrain and frame components under pressure.',
     ],
   },
   {
