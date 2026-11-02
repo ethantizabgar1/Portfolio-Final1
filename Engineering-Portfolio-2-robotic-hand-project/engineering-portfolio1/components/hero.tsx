@@ -26,19 +26,6 @@ export function Hero() {
           {profile.bio}
         </p>
 
-        {/* focus areas */}
-        <div className="mt-8 flex flex-wrap gap-2">
-          {profile.focus.map((f, i) => (
-            <span
-              key={f}
-              className="inline-flex items-center gap-2 rounded-sm border border-border bg-card px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-foreground"
-            >
-              <span className="text-primary">{String(i + 1).padStart(2, '0')}</span>
-              {f}
-            </span>
-          ))}
-        </div>
-
         {/* CTAs */}
         <div className="mt-10 flex flex-col gap-3 sm:flex-row">
           <a
